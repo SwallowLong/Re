@@ -1,0 +1,13 @@
+body {
+    padding: 0 20px;
+}
+label[for='e-mail'], label[for='psw'], label[for='psw-1'] {
+    display: block;
+}
+img {
+    width: 200px;
+    height: 150px;
+}
+a {
+    color: #55f;
+}
