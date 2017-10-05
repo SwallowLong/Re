@@ -1,8 +1,8 @@
+/* 页面通用样式 */ 
 body {
-    padding: 0 20px;
-}
-label[for='e-mail'], label[for='psw'], label[for='psw-1'] {
-    display: block;
+    margin: 0;
+    padding: 0 40px;
+    background: #333;
 }
 img {
     width: 200px;
@@ -10,4 +10,21 @@ img {
 }
 a {
     color: #55f;
+}
+.wrap {
+    padding: 0 20px;
+    background: #fff;
+}
+label[for='e-mail'], label[for='psw'], label[for='psw-1'] {
+    display: block;
+}
+/* 
+  去除h1和footer中p的特定外边距
+  达到去除多余边框的效果
+*/
+h1 {
+    margin: 0;
+}
+footer p {
+    margin-bottom: 0;
 }
