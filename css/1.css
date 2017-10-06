@@ -1,8 +1,11 @@
 /* 页面通用样式 */ 
-body {
+* {
+    padding: 0;
     margin: 0;
+}
+body {
     padding: 0 40px;
-    background: #333;
+    background: #000;
 }
 img {
     width: 200px;
@@ -11,20 +14,53 @@ img {
 a {
     color: #55f;
 }
+ol {
+    list-style-position: inside;
+}
 .wrap {
-    padding: 0 20px;
-    background: #fff;
+    margin: 0;
+    padding: 0;
+    background: #ddd;
 }
 label[for='e-mail'], label[for='psw'], label[for='psw-1'] {
     display: block;
 }
-/* 
-  去除h1和footer中p的特定外边距
-  达到去除多余边框的效果
-*/
-h1 {
-    margin: 0;
+/* 导航栏样式 */
+header {
+    padding: 20px;
+    background: #222;
+    overflow: hidden;
+}
+header h1 {
+    float: left;
+    line-height: 100%;
+    color: #fff;
+}
+header li {
+    float: right;
+    margin: 0 20px;
+    line-height: 40px;
+}
+header li a {
+    text-decoration: none;
+    color: #fff;
+}
+/* 文章内容样式 */
+div {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+}
+/* 尾部样式 */
+footer {
+    position: relative;
+    padding: 20px 0;
+    background: #222;
 }
 footer p {
-    margin-bottom: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
 }
