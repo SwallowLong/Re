@@ -18,6 +18,9 @@ ol {
     list-style-position: inside;
 }
 .wrap {
+    position: relative;
+    left: 0;
+    right: 0;
     margin: 0;
     padding: 0;
     background: #ddd;
@@ -27,7 +30,8 @@ label[for='e-mail'], label[for='psw'], label[for='psw-1'] {
 }
 /* 导航栏样式 */
 header {
-    padding: 20px;
+    padding: 10px;
+    padding-left: 20px;
     background: #222;
     overflow: hidden;
 }
@@ -47,9 +51,18 @@ header li a {
 }
 /* 文章内容样式 */
 div {
+    position: relative;
+    right: 0;
     margin: 20px;
     padding: 20px;
     background: #fff;
+}
+/* 侧边栏 */
+.aside {
+    position: absolute;
+    width: 300px;
+    top: 80px;
+    right: 20px;
 }
 /* 尾部样式 */
 footer {
